@@ -1,0 +1,713 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/KDE"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/KDE">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Activities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Address"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coffeshop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommunicationInfo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Communitiy_Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Creator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cultural_Acitivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Facilities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeoCordinates"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Martial_Arts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Multi_Use_Centre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Online_Presence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parking_Space"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Single_Purpose_Centre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sport_Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sport_and_recreation_clubs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#activitytypes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#facilitiesareprovidedin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#facilitiesprovided"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasaddress"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hascontactinfo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hascoordiantes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hascreator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#haslocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isacitivitytypein"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#iscreator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isnearby"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#onlinepresencein"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#parkingfacility"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Xvalue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Yvalue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPhone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasemail"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasfacebooklink"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hastwitterlink"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haswebsite"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#noofspaces"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#spacetype"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Activities"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isacitivitytypein"/>
+            <Class IRI="#Communitiy_Building"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommunicationInfo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasaddress"/>
+            <Class IRI="#Address"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommunicationInfo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#onlinepresencein"/>
+            <Class IRI="#Online_Presence"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommunicationInfo"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasPhone"/>
+            <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommunicationInfo"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasemail"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communitiy_Building"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#facilitiesprovided"/>
+            <Class IRI="#Facilities"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communitiy_Building"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hascontactinfo"/>
+            <Class IRI="#CommunicationInfo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communitiy_Building"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isnearby"/>
+            <Class IRI="#Communitiy_Building"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communitiy_Building"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#onlinepresencein"/>
+            <Class IRI="#Online_Presence"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communitiy_Building"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#parkingfacility"/>
+            <Class IRI="#Parking_Space"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communitiy_Building"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hascreator"/>
+            <Class IRI="#Creator"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communitiy_Building"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hascoordiantes"/>
+            <Class IRI="#GeoCordinates"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Creator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#iscreator"/>
+            <Class IRI="#Communitiy_Building"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cultural_Acitivity"/>
+        <Class IRI="#Activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Facilities"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#facilitiesareprovidedin"/>
+            <Class IRI="#Communitiy_Building"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeoCordinates"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#Xvalue"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeoCordinates"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#Yvalue"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Martial_Arts"/>
+        <Class IRI="#Activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Multi_Use_Centre"/>
+        <Class IRI="#Communitiy_Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Multi_Use_Centre"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="#activitytypes"/>
+            <Class IRI="#Activities"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Online_Presence"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasfacebooklink"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Online_Presence"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hastwitterlink"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Online_Presence"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#haswebsite"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parking_Space"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#haslocation"/>
+            <Class IRI="#Location"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parking_Space"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#hascoordiantes"/>
+            <Class IRI="#GeoCordinates"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parking_Space"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#noofspaces"/>
+            <Datatype abbreviatedIRI="xsd:int"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parking_Space"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#spacetype"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Single_Purpose_Centre"/>
+        <Class IRI="#Communitiy_Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Single_Purpose_Centre"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#activitytypes"/>
+            <Class IRI="#Activities"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sport_Activity"/>
+        <Class IRI="#Activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sport_and_recreation_clubs"/>
+        <Class IRI="#Single_Purpose_Centre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sport_and_recreation_clubs"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#activitytypes"/>
+            <Class IRI="#Sport_Activity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Activities"/>
+        <Class IRI="#Address"/>
+        <Class IRI="#Coffeshop"/>
+        <Class IRI="#CommunicationInfo"/>
+        <Class IRI="#Communitiy_Building"/>
+        <Class IRI="#Creator"/>
+        <Class IRI="#Cultural_Acitivity"/>
+        <Class IRI="#Facilities"/>
+        <Class IRI="#GeoCordinates"/>
+        <Class IRI="#Location"/>
+        <Class IRI="#Martial_Arts"/>
+        <Class IRI="#Multi_Use_Centre"/>
+        <Class IRI="#Online_Presence"/>
+        <Class IRI="#Parking_Space"/>
+        <Class IRI="#Single_Purpose_Centre"/>
+        <Class IRI="#Sport_Activity"/>
+        <Class IRI="#Sport_and_recreation_clubs"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#activitytypes"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#facilitiesareprovidedin"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#facilitiesprovided"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasaddress"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hascontactinfo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hascoordiantes"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hascreator"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#haslocation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isacitivitytypein"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isnearby"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#onlinepresencein"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#parkingfacility"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#activitytypes"/>
+        <ObjectProperty IRI="#isacitivitytypein"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#facilitiesareprovidedin"/>
+        <ObjectProperty IRI="#facilitiesprovided"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hascreator"/>
+        <ObjectProperty IRI="#iscreator"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hascoordiantes"/>
+    </FunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#isnearby"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#activitytypes"/>
+        <Class IRI="#Communitiy_Building"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#facilitiesareprovidedin"/>
+        <Class IRI="#Facilities"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#facilitiesprovided"/>
+        <Class IRI="#Communitiy_Building"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasaddress"/>
+        <Class IRI="#CommunicationInfo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hascontactinfo"/>
+        <Class IRI="#Communitiy_Building"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hascoordiantes"/>
+        <Class IRI="#Communitiy_Building"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hascoordiantes"/>
+        <Class IRI="#Parking_Space"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hascreator"/>
+        <Class IRI="#Communitiy_Building"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#haslocation"/>
+        <Class IRI="#Parking_Space"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isacitivitytypein"/>
+        <Class IRI="#Activities"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#iscreator"/>
+        <Class IRI="#Creator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isnearby"/>
+        <Class IRI="#Communitiy_Building"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#onlinepresencein"/>
+        <Class IRI="#Communitiy_Building"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#parkingfacility"/>
+        <Class IRI="#Parking_Space"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#activitytypes"/>
+        <Class IRI="#Activities"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#facilitiesareprovidedin"/>
+        <Class IRI="#Communitiy_Building"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#facilitiesprovided"/>
+        <Class IRI="#Facilities"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hascontactinfo"/>
+        <Class IRI="#CommunicationInfo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hascoordiantes"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#Xvalue"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hascoordiantes"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#Yvalue"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hascreator"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hascreator"/>
+            <Class IRI="#Creator"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#haslocation"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isacitivitytypein"/>
+        <Class IRI="#Communitiy_Building"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#iscreator"/>
+        <Class IRI="#Communitiy_Building"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isnearby"/>
+        <Class IRI="#Communitiy_Building"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#onlinepresencein"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasemail"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#onlinepresencein"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasfacebooklink"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#onlinepresencein"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hastwitterlink"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#onlinepresencein"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#haswebsite"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#parkingfacility"/>
+        <Class IRI="#Parking_Space"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#Creator"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Xvalue"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Yvalue"/>
+    </FunctionalDataProperty>
+    <DataPropertyRange>
+        <DataProperty IRI="#Xvalue"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Yvalue"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPhone"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasemail"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasfacebooklink"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hastwitterlink"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#haswebsite"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#noofspaces"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#spacetype"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Activities</IRI>
+        <Literal>Different types of activities that are helad at the community centre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Address</IRI>
+        <Literal>Address</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CommunicationInfo</IRI>
+        <Literal>Different way that can be used to contact.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Communitiy_Building</IRI>
+        <Literal>Community building used for different purposes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Creator</IRI>
+        <Literal>The creator of the community center</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cultural_Acitivity</IRI>
+        <Literal>Any cultural acitivity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Facilities</IRI>
+        <Literal>Different facilities that are provided by the community centre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GeoCordinates</IRI>
+        <Literal>X and Y cordinate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Martial_Arts</IRI>
+        <Literal>Activities related with different Martial art</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Multi_Use_Centre</IRI>
+        <Literal>Community centre having multiple purposes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Online_Presence</IRI>
+        <Literal>Any onine purpose data such as facebook id , website</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Parking_Space</IRI>
+        <Literal>Parking space details such as location , no of spaces etc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Single_Purpose_Centre</IRI>
+        <Literal>Community  centres used for single purpose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sport_Activity</IRI>
+        <Literal>Any type of activity that is related with sports</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sport_and_recreation_clubs</IRI>
+        <Literal>Type of single purpose center used for sports related acitivities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#activitytypes</IRI>
+        <Literal>hasactivitytype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#facilitiesareprovidedin</IRI>
+        <Literal>isfacilitiesin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#facilitiesprovided</IRI>
+        <Literal>hasfacilities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#onlinepresencein</IRI>
+        <Literal>hasonline_presence</Literal>
+    </AnnotationAssertion>
+    <DatatypeDefinition>
+        <Datatype abbreviatedIRI="owl:rational"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DatatypeDefinition>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,28 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<http://www.semanticweb.org/KDE#> a prov:Entity;
+	 dc:title "South Dublin City Council Facilities: Sports centres and Multi-Use Community centres";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo :agent4;
+	 prov:wasAttributedTo :agent5;
+	 prov:wasAttributedTo :agent6;
+	 prov:wasAttributedTo :agent7;
+	 prov:wasAttributedTo :agent8;
+	 prov:wasAttributedTo :agent9;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "19-11-2019";
+.
+:agent0 a prov:Agent; foaf:name "vishal".
+:agent1 a prov:Agent; foaf:name "Oomen".
+:agent2 a prov:Agent; foaf:name "Nikhil".
+:agent3 a prov:Agent; foaf:name "Shravani".
+:agent4 a prov:Agent; foaf:name "Sameer".
+:agent5 a prov:Agent; foaf:name "Sameer".
+:agent6 a prov:Agent; foaf:name "Shravani".
+:agent7 a prov:Agent; foaf:name "Nikhil".
+:agent8 a prov:Agent; foaf:name "Oomen".
+:agent9 a prov:Agent; foaf:name "vishal".

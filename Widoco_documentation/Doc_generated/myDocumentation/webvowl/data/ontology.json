@@ -1,0 +1,2184 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.semanticweb.org/KDE", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://www.semanticweb.org/KDE"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "owl:Class"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "22",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "54",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "78",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/KDE#Address",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Address"
+    },
+    "comment" : {
+      "undefined" : "Address"
+    },
+    "id" : "20"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#GeoCordinates",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GeoCordinates"
+    },
+    "comment" : {
+      "undefined" : "X and Y cordinate"
+    },
+    "id" : "34"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#CommunicationInfo",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CommunicationInfo"
+    },
+    "comment" : {
+      "undefined" : "Different way that can be used to contact."
+    },
+    "id" : "56"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#Martial_Arts",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Martial_Arts"
+    },
+    "comment" : {
+      "undefined" : "Activities related with different Martial art"
+    },
+    "id" : "10",
+    "superClasses" : [ "64" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#Parking_Space",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Parking_Space"
+    },
+    "comment" : {
+      "undefined" : "Parking space details such as location , no of spaces etc"
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#Communitiy_Building",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Communitiy_Building"
+    },
+    "subClasses" : [ "11", "4" ],
+    "comment" : {
+      "undefined" : "Community building used for different purposes"
+    },
+    "id" : "38"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "positiveInteger"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#Sport_and_recreation_clubs",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sport_and_recreation_clubs"
+    },
+    "comment" : {
+      "undefined" : "Type of single purpose center used for sports related acitivities"
+    },
+    "id" : "8",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#Sport_Activity",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sport_Activity"
+    },
+    "comment" : {
+      "undefined" : "Any type of activity that is related with sports"
+    },
+    "id" : "6",
+    "superClasses" : [ "64" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#Coffeshop",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Coffeshop"
+    },
+    "id" : "124"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "143",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "16",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "22",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "54",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "78",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "38" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "121",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "75",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#Facilities",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Facilities"
+    },
+    "comment" : {
+      "undefined" : "Different facilities that are provided by the community centre"
+    },
+    "id" : "47"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "61",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "162",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "141",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "102",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "108",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#Multi_Use_Centre",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Multi_Use_Centre"
+    },
+    "comment" : {
+      "undefined" : "Community centre having multiple purposes"
+    },
+    "id" : "11",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#Creator",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Creator"
+    },
+    "comment" : {
+      "undefined" : "The creator of the community center"
+    },
+    "id" : "23"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#Cultural_Acitivity",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cultural_Acitivity"
+    },
+    "comment" : {
+      "undefined" : "Any cultural acitivity"
+    },
+    "id" : "116",
+    "superClasses" : [ "64" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#Single_Purpose_Centre",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Single_Purpose_Centre"
+    },
+    "subClasses" : [ "8" ],
+    "comment" : {
+      "undefined" : "Community  centres used for single purpose"
+    },
+    "id" : "4",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#Location",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Location"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#Online_Presence",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Online_Presence"
+    },
+    "comment" : {
+      "undefined" : "Any onine purpose data such as facebook id , website"
+    },
+    "id" : "13"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#Activities",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activities"
+    },
+    "subClasses" : [ "116", "6", "10" ],
+    "comment" : {
+      "undefined" : "Different types of activities that are helad at the community centre"
+    },
+    "id" : "64"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "3",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "5",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "7",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "9",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "12",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "19",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "36",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "37",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "44",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "45",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "46",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "49",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "50",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "51",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "58",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "60",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "62",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "67",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "69",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "71",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "72",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "73",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "77",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "81",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "82",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "83",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "84",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "85",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "86",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "87",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "88",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "90",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "91",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "92",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "93",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "94",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "95",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "96",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "97",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "98",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "99",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "100",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "104",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "105",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "106",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "110",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "111",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "112",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "113",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "114",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "115",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "117",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "118",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "119",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "123",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "125",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "130",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "131",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "132",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "133",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "134",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "135",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "138",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "139",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "140",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "144",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "145",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "146",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "147",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "148",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "149",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "151",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "153",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "154",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "155",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "157",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "158",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "159",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "160",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "161",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "163",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "164",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "165",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "166",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "167",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "168",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "169",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "170",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "171",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "172",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "173",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "174",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "175",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "176",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "177",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "178",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "179",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "180",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "181",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "182",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "183",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "184",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "185",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "186",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "187",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "188",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "189",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "190",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "191",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "192",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "193",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "194",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "195",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "196",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "197",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "198",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "199",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "200",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "201",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "202",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "203",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "204",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "205",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "206",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "207",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "208",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "209",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "210",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "211",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "212",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "213",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "214",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "215",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "216",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "217",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "218",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "219",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "220",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "221",
+    "type" : "owl:disjointWith"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
+  }, {
+    "range" : "4",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "range" : "6",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "5"
+  }, {
+    "range" : "8",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "7"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
+  }, {
+    "range" : "13",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#hascoordiantes",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hascoordiantes"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "15",
+    "attributes" : [ "object", "functional" ],
+    "id" : "14"
+  }, {
+    "range" : "2",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "range" : "4",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#parkingfacility",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "parkingfacility"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "22",
+    "subproperty" : [ "24", "25", "26", "27", "28", "14", "29", "30", "31", "32", "33", "21" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "17"
+  }, {
+    "range" : "11",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "range" : "13",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "1",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#onlinepresencein",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "onlinepresencein",
+      "undefined" : "hasonline_presence"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "38",
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "range" : "10",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "11",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "13",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "2",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "4",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "6",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "range" : "8",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "range" : "10",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#facilitiesareprovidedin",
+    "inverse" : "33",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "facilitiesareprovidedin",
+      "undefined" : "isfacilitiesin"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "47",
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "range" : "4",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "range" : "2",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "6",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "range" : "8",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#hascreator",
+    "inverse" : "52",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hascreator"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "38",
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#hasPhone",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "hasPhone"
+    },
+    "domain" : "54",
+    "attributes" : [ "datatype" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#haslocation",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "haslocation"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "2",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#spacetype",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "spacetype"
+    },
+    "domain" : "2",
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#noofspaces",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "noofspaces"
+    },
+    "domain" : "2",
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#hastwitterlink",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "hastwitterlink"
+    },
+    "domain" : "54",
+    "attributes" : [ "datatype" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#hasfacebooklink",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "hasfacebooklink"
+    },
+    "domain" : "13",
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#hastwitterlink",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "hastwitterlink"
+    },
+    "domain" : "13",
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#haswebsite",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "haswebsite"
+    },
+    "domain" : "13",
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#parkingfacility",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "parkingfacility"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "38",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#hascontactinfo",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "hascontactinfo"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "38",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#onlinepresencein",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "onlinepresencein",
+      "undefined" : "hasonline_presence"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "38",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#noofspaces",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "noofspaces"
+    },
+    "domain" : "54",
+    "attributes" : [ "datatype" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#iscreator",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "iscreator"
+    },
+    "domain" : "23",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#facilitiesareprovidedin",
+    "inverse" : "33",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "facilitiesareprovidedin",
+      "undefined" : "isfacilitiesin"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "47",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#hasaddress",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "hasaddress"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "56",
+    "attributes" : [ "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#activitytypes",
+    "inverse" : "27",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "activitytypes",
+      "undefined" : "hasactivitytype"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "38",
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#hasemail",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "hasemail"
+    },
+    "domain" : "56",
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#hasaddress",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasaddress"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "56",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#isnearby",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "isnearby"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "38",
+    "attributes" : [ "object", "someValues", "symmetric" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#facilitiesprovided",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "facilitiesprovided",
+      "undefined" : "hasfacilities"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "38",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "83"
+  }, {
+    "range" : "6",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "range" : "8",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "range" : "8",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#onlinepresencein",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "onlinepresencein",
+      "undefined" : "hasonline_presence"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "56",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#hasPhone",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "89",
+    "label" : {
+      "IRI-based" : "hasPhone"
+    },
+    "domain" : "56",
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "88"
+  }, {
+    "range" : "8",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "range" : "4",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "91"
+  }, {
+    "range" : "6",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
+  }, {
+    "range" : "8",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "93"
+  }, {
+    "range" : "2",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94"
+  }, {
+    "range" : "4",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95"
+  }, {
+    "range" : "6",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "96"
+  }, {
+    "range" : "8",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "97"
+  }, {
+    "range" : "2",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "98"
+  }, {
+    "range" : "4",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "99"
+  }, {
+    "range" : "6",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#hasemail",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "hasemail"
+    },
+    "domain" : "54",
+    "attributes" : [ "datatype" ],
+    "id" : "101"
+  }, {
+    "range" : "6",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "103"
+  }, {
+    "range" : "8",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "range" : "13",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "range" : "6",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#isnearby",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "isnearby"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "38",
+    "attributes" : [ "object", "symmetric" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#hasfacebooklink",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "hasfacebooklink"
+    },
+    "domain" : "16",
+    "attributes" : [ "datatype" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#facilitiesprovided",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "facilitiesprovided",
+      "undefined" : "hasfacilities"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "38",
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "range" : "4",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "range" : "2",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "range" : "10",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "range" : "1",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "112"
+  }, {
+    "range" : "13",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113"
+  }, {
+    "range" : "11",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "114"
+  }, {
+    "range" : "116",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "115"
+  }, {
+    "range" : "23",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "34",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "range" : "47",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#haswebsite",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "121",
+    "label" : {
+      "IRI-based" : "haswebsite"
+    },
+    "domain" : "54",
+    "attributes" : [ "datatype" ],
+    "id" : "120"
+  }, {
+    "range" : "56",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122"
+  }, {
+    "range" : "124",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "38",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "range" : "64",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "126"
+  }, {
+    "range" : "4",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "range" : "64",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "128"
+  }, {
+    "range" : "2",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
+  }, {
+    "range" : "8",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "130"
+  }, {
+    "range" : "6",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
+  }, {
+    "range" : "10",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
+  }, {
+    "range" : "13",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "range" : "11",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "34",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
+  }, {
+    "range" : "4",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#iscreator",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "iscreator"
+    },
+    "domain" : "23",
+    "attributes" : [ "object" ],
+    "id" : "52"
+  }, {
+    "range" : "64",
+    "domain" : "116",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
+  }, {
+    "range" : "10",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "138"
+  }, {
+    "range" : "1",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#Yvalue",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "141",
+    "label" : {
+      "IRI-based" : "Yvalue"
+    },
+    "cardinality" : "1",
+    "domain" : "54",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "140"
+  }, {
+    "range" : "23",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "142"
+  }, {
+    "range" : "38",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "144"
+  }, {
+    "range" : "47",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "145"
+  }, {
+    "range" : "116",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "range" : "4",
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "147"
+  }, {
+    "range" : "2",
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "148"
+  }, {
+    "range" : "8",
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "149"
+  }, {
+    "range" : "38",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "150"
+  }, {
+    "range" : "6",
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "151"
+  }, {
+    "range" : "38",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "152"
+  }, {
+    "range" : "13",
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "153"
+  }, {
+    "range" : "11",
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "154"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#spacetype",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "143",
+    "label" : {
+      "IRI-based" : "spacetype"
+    },
+    "domain" : "54",
+    "attributes" : [ "datatype" ],
+    "id" : "155"
+  }, {
+    "range" : "10",
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "156"
+  }, {
+    "range" : "47",
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "157"
+  }, {
+    "range" : "116",
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "158"
+  }, {
+    "range" : "1",
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "159"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#activitytypes",
+    "inverse" : "27",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "activitytypes",
+      "undefined" : "hasactivitytype"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "8",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "160"
+  }, {
+    "range" : "34",
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "161"
+  }, {
+    "range" : "56",
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "163"
+  }, {
+    "range" : "8",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "164"
+  }, {
+    "range" : "23",
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "165"
+  }, {
+    "range" : "38",
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "166"
+  }, {
+    "range" : "47",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "167"
+  }, {
+    "range" : "116",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "168"
+  }, {
+    "range" : "1",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "169"
+  }, {
+    "range" : "34",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
+  }, {
+    "range" : "8",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "171"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#haslocation",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "haslocation"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "range" : "6",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "172"
+  }, {
+    "range" : "4",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "173"
+  }, {
+    "range" : "11",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
+    "range" : "10",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "175"
+  }, {
+    "range" : "2",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "176"
+  }, {
+    "range" : "13",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "177"
+  }, {
+    "range" : "47",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "178"
+  }, {
+    "range" : "116",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "179"
+  }, {
+    "range" : "1",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "180"
+  }, {
+    "range" : "34",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "181"
+  }, {
+    "range" : "8",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "182"
+  }, {
+    "range" : "6",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "183"
+  }, {
+    "range" : "23",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "184"
+  }, {
+    "range" : "13",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "185"
+  }, {
+    "range" : "11",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "186"
+  }, {
+    "range" : "4",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "187"
+  }, {
+    "range" : "2",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "188"
+  }, {
+    "range" : "10",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "189"
+  }, {
+    "range" : "1",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "190"
+  }, {
+    "range" : "13",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "191"
+  }, {
+    "range" : "11",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "192"
+  }, {
+    "range" : "6",
+    "domain" : "116",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "193"
+  }, {
+    "range" : "34",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "194"
+  }, {
+    "range" : "8",
+    "domain" : "116",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "195"
+  }, {
+    "range" : "124",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "196"
+  }, {
+    "range" : "56",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "197"
+  }, {
+    "range" : "38",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "198"
+  }, {
+    "range" : "23",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "199"
+  }, {
+    "range" : "116",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "200"
+  }, {
+    "range" : "47",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "201"
+  }, {
+    "range" : "34",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "202"
+  }, {
+    "range" : "1",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "203"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#isacitivitytypein",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "isacitivitytypein"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "64",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "204"
+  }, {
+    "range" : "20",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "205"
+  }, {
+    "range" : "13",
+    "domain" : "116",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "206"
+  }, {
+    "range" : "11",
+    "domain" : "116",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "207"
+  }, {
+    "range" : "4",
+    "domain" : "116",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "208"
+  }, {
+    "range" : "2",
+    "domain" : "116",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "209"
+  }, {
+    "range" : "34",
+    "domain" : "116",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "210"
+  }, {
+    "range" : "47",
+    "domain" : "116",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "211"
+  }, {
+    "range" : "10",
+    "domain" : "116",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "212"
+  }, {
+    "range" : "1",
+    "domain" : "116",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "213"
+  }, {
+    "range" : "8",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "214"
+  }, {
+    "range" : "6",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "215"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#hascontactinfo",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "hascontactinfo"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "38",
+    "attributes" : [ "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#isacitivitytypein",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "isacitivitytypein"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "64",
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.semanticweb.org/KDE#Xvalue",
+    "baseIri" : "http://www.semanticweb.org/KDE",
+    "range" : "162",
+    "label" : {
+      "IRI-based" : "Xvalue"
+    },
+    "cardinality" : "1",
+    "domain" : "54",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "216"
+  }, {
+    "range" : "4",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "217"
+  }, {
+    "range" : "11",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "218"
+  }, {
+    "range" : "10",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "219"
+  }, {
+    "range" : "2",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "220"
+  }, {
+    "range" : "13",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "221"
+  } ]
+}

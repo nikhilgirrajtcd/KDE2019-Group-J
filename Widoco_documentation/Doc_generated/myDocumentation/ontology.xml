@@ -1,0 +1,710 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/KDE#"
+     xml:base="http://www.semanticweb.org/KDE"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/KDE"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#rational -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#rational">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#activitytypes -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/KDE#activitytypes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/KDE#isacitivitytypein"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/KDE#Communitiy_Building"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/KDE#Activities"/>
+        <rdfs:label>hasactivitytype</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#facilitiesareprovidedin -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/KDE#facilitiesareprovidedin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/KDE#facilitiesprovided"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/KDE#Facilities"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/KDE#Communitiy_Building"/>
+        <rdfs:label>isfacilitiesin</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#facilitiesprovided -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/KDE#facilitiesprovided">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/KDE#Communitiy_Building"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/KDE#Facilities"/>
+        <rdfs:label>hasfacilities</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#hasaddress -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/KDE#hasaddress">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/KDE#CommunicationInfo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#hascontactinfo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/KDE#hascontactinfo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/KDE#Communitiy_Building"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/KDE#CommunicationInfo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#hascoordiantes -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/KDE#hascoordiantes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/KDE#Communitiy_Building"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/KDE#Parking_Space"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#Xvalue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#Yvalue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#hascreator -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/KDE#hascreator">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/KDE#iscreator"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/KDE#Communitiy_Building"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#hascreator"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/KDE#Creator"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#haslocation -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/KDE#haslocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/KDE#Parking_Space"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/KDE#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#isacitivitytypein -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/KDE#isacitivitytypein">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/KDE#Activities"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/KDE#Communitiy_Building"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#iscreator -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/KDE#iscreator">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/KDE#Creator"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/KDE#Communitiy_Building"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#isnearby -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/KDE#isnearby">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/KDE#Communitiy_Building"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/KDE#Communitiy_Building"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#onlinepresencein -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/KDE#onlinepresencein">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/KDE#Communitiy_Building"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#hasemail"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#hasfacebooklink"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#hastwitterlink"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#haswebsite"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:label>hasonline_presence</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#parkingfacility -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/KDE#parkingfacility">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/KDE#Parking_Space"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/KDE#Parking_Space"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/KDE#Creator"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#Xvalue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/KDE#Xvalue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#Yvalue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/KDE#Yvalue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#hasPhone -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/KDE#hasPhone">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#hasemail -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/KDE#hasemail">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#hasfacebooklink -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/KDE#hasfacebooklink">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#hastwitterlink -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/KDE#hastwitterlink">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#haswebsite -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/KDE#haswebsite">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#noofspaces -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/KDE#noofspaces">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#spacetype -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/KDE#spacetype">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#Activities -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/KDE#Activities">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#isacitivitytypein"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/KDE#Communitiy_Building"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Different types of activities that are helad at the community centre</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#Address -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/KDE#Address">
+        <rdfs:comment>Address</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#Coffeshop -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/KDE#Coffeshop"/>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#CommunicationInfo -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/KDE#CommunicationInfo">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#hasaddress"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/KDE#Address"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#onlinepresencein"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/KDE#Online_Presence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#hasPhone"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#hasemail"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Different way that can be used to contact.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#Communitiy_Building -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/KDE#Communitiy_Building">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#facilitiesprovided"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/KDE#Facilities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#hascontactinfo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/KDE#CommunicationInfo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#isnearby"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/KDE#Communitiy_Building"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#onlinepresencein"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/KDE#Online_Presence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#parkingfacility"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/KDE#Parking_Space"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#hascreator"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/KDE#Creator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#hascoordiantes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/KDE#GeoCordinates"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Community building used for different purposes</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#Creator -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/KDE#Creator">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#iscreator"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/KDE#Communitiy_Building"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The creator of the community center</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#Cultural_Acitivity -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/KDE#Cultural_Acitivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/KDE#Activities"/>
+        <rdfs:comment>Any cultural acitivity</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#Facilities -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/KDE#Facilities">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#facilitiesareprovidedin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/KDE#Communitiy_Building"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Different facilities that are provided by the community centre</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#GeoCordinates -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/KDE#GeoCordinates">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#Xvalue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#Yvalue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>X and Y cordinate</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#Location -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/KDE#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#Martial_Arts -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/KDE#Martial_Arts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/KDE#Activities"/>
+        <rdfs:comment>Activities related with different Martial art</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#Multi_Use_Centre -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/KDE#Multi_Use_Centre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/KDE#Communitiy_Building"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#activitytypes"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/KDE#Activities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Community centre having multiple purposes</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#Online_Presence -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/KDE#Online_Presence">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#hasfacebooklink"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#hastwitterlink"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#haswebsite"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Any onine purpose data such as facebook id , website</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#Parking_Space -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/KDE#Parking_Space">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#haslocation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/KDE#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#hascoordiantes"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/KDE#GeoCordinates"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#noofspaces"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#spacetype"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Parking space details such as location , no of spaces etc</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#Single_Purpose_Centre -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/KDE#Single_Purpose_Centre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/KDE#Communitiy_Building"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#activitytypes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/KDE#Activities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Community  centres used for single purpose</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#Sport_Activity -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/KDE#Sport_Activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/KDE#Activities"/>
+        <rdfs:comment>Any type of activity that is related with sports</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/KDE#Sport_and_recreation_clubs -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/KDE#Sport_and_recreation_clubs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/KDE#Single_Purpose_Centre"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/KDE#activitytypes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/KDE#Sport_Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Type of single purpose center used for sports related acitivities</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/KDE#Activities"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/KDE#Address"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/KDE#Coffeshop"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/KDE#CommunicationInfo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/KDE#Communitiy_Building"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/KDE#Creator"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/KDE#Cultural_Acitivity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/KDE#Facilities"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/KDE#GeoCordinates"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/KDE#Location"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/KDE#Martial_Arts"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/KDE#Multi_Use_Centre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/KDE#Online_Presence"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/KDE#Parking_Space"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/KDE#Single_Purpose_Centre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/KDE#Sport_Activity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/KDE#Sport_and_recreation_clubs"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
+
