@@ -1,0 +1,415 @@
+@prefix : <http://www.semanticweb.org/KDE#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/KDE> .
+
+<http://www.semanticweb.org/KDE> rdf:type owl:Ontology ;
+                                  owl:versionIRI <http://www.semanticweb.org/KDE/1.0> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#rational
+owl:rational owl:equivalentClass xsd:decimal .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/KDE#hasActivityType
+:hasActivityType rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :isAcitivityTypeIn ;
+                 rdfs:domain :CommunitiyBuilding ;
+                 rdfs:range :Activities .
+
+
+###  http://www.semanticweb.org/KDE#hasAddress
+:hasAddress rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            <http://purl.org/dc/elements/1.1/title> "Property hasAddress" .
+
+
+###  http://www.semanticweb.org/KDE#hasCoffeeDock
+:hasCoffeeDock rdf:type owl:ObjectProperty ;
+               rdfs:domain :Facilities ;
+               rdfs:range :Coffeshop .
+
+
+###  http://www.semanticweb.org/KDE#hasContactInfo
+:hasContactInfo rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain :CommunitiyBuilding ;
+                rdfs:range :CommunicationInfo ;
+                <http://purl.org/dc/elements/1.1/title> "Property hasContactInfo" .
+
+
+###  http://www.semanticweb.org/KDE#hasCoordiantes
+:hasCoordiantes rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdf:type owl:FunctionalProperty ;
+                rdfs:range :GeoCordinates ;
+                <http://purl.org/dc/elements/1.1/title> "Property hasCoordinates" .
+
+
+###  http://www.semanticweb.org/KDE#hasCreator
+:hasCreator rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            owl:inverseOf :isCreator ;
+            rdfs:domain :CommunitiyBuilding ;
+            rdfs:range :Creator ;
+            <http://purl.org/dc/elements/1.1/title> "Property hasCreator" .
+
+
+###  http://www.semanticweb.org/KDE#hasFacilities
+:hasFacilities rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               owl:inverseOf :isFacilitiesIn ;
+               <http://purl.org/dc/elements/1.1/title> "Property hasFacilities" .
+
+
+###  http://www.semanticweb.org/KDE#hasLocation
+:hasLocation rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             <http://purl.org/dc/elements/1.1/title> "Property hasLocation" .
+
+
+###  http://www.semanticweb.org/KDE#hasOnlinePresence
+:hasOnlinePresence rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain :CommunicationInfo ;
+                   rdfs:range :OnlinePresence ;
+                   <http://purl.org/dc/elements/1.1/title> "Property hasOnlinePresence" .
+
+
+###  http://www.semanticweb.org/KDE#hasParkingFacility
+:hasParkingFacility rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdfs:domain :CommunitiyBuilding ;
+                    rdfs:range :ParkingSpace ;
+                    <http://purl.org/dc/elements/1.1/title> "Property hasParkingFacility" .
+
+
+###  http://www.semanticweb.org/KDE#hasPlayArea
+:hasPlayArea rdf:type owl:ObjectProperty ;
+             rdfs:domain :Facilities ;
+             rdfs:range :PlayArea .
+
+
+###  http://www.semanticweb.org/KDE#isAcitivityTypeIn
+:isAcitivityTypeIn rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   <http://purl.org/dc/elements/1.1/title> "Property isActivityTypeIn" .
+
+
+###  http://www.semanticweb.org/KDE#isCreator
+:isCreator rdf:type owl:ObjectProperty ;
+           <http://purl.org/dc/elements/1.1/title> "Property isCreator" .
+
+
+###  http://www.semanticweb.org/KDE#isFacilitiesIn
+:isFacilitiesIn rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                <http://purl.org/dc/elements/1.1/title> "Property isFacilitiesIn" .
+
+
+###  http://www.semanticweb.org/KDE#isNearby
+:isNearby rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdf:type owl:SymmetricProperty ;
+          rdfs:domain :CommunitiyBuilding ;
+          rdfs:range :CommunitiyBuilding ;
+          <http://purl.org/dc/elements/1.1/title> "Property isNearby" .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdfs:range :Creator .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/KDE#hasDisabilityAccess
+:hasDisabilityAccess rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :CommunitiyBuilding ;
+                     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/KDE#hasFacebookLink
+:hasFacebookLink rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/KDE#hasId
+:hasId rdf:type owl:DatatypeProperty ;
+       rdfs:domain :ParkingSpace ;
+       rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/KDE#hasLocationName
+:hasLocationName rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :ParkingSpace ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/KDE#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:domain :CommunitiyBuilding ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/KDE#hasNoOfSpaces
+:hasNoOfSpaces rdf:type owl:DatatypeProperty ;
+               <http://purl.org/dc/elements/1.1/title> "Data Property hasNoOfSpaces" .
+
+
+###  http://www.semanticweb.org/KDE#hasObjectId
+:hasObjectId rdf:type owl:DatatypeProperty ;
+             rdfs:domain :CommunitiyBuilding ;
+             rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/KDE#hasPrimaryActivity
+:hasPrimaryActivity rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Activities ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/KDE#hasSpaceType
+:hasSpaceType rdf:type owl:DatatypeProperty ;
+              <http://purl.org/dc/elements/1.1/title> "Data Property hasSpaceType" .
+
+
+###  http://www.semanticweb.org/KDE#hasSummaryActivities
+:hasSummaryActivities rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Activities ;
+                      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/KDE#hasTwitterLink
+:hasTwitterLink rdf:type owl:DatatypeProperty ;
+                <http://purl.org/dc/elements/1.1/title> "Data Property hasTwitterLink" .
+
+
+###  http://www.semanticweb.org/KDE#hasWebsite
+:hasWebsite rdf:type owl:DatatypeProperty ;
+            <http://purl.org/dc/elements/1.1/title> "Data Property hasWebsite" .
+
+
+###  http://www.semanticweb.org/KDE#hasX
+:hasX rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain :GeoCordinates .
+
+
+###  http://www.semanticweb.org/KDE#hasY
+:hasY rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain :GeoCordinates .
+
+
+###  http://www.semanticweb.org/KDE#isSdccOwned
+:isSdccOwned rdf:type owl:DatatypeProperty ;
+             rdfs:domain :CommunitiyBuilding ;
+             rdfs:range xsd:string .
+
+
+###  https://schema.org/dateCreated
+<https://schema.org/dateCreated> rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain :CommunitiyBuilding ;
+                                 rdfs:range xsd:dateTime .
+
+
+###  https://schema.org/email
+<https://schema.org/email> rdf:type owl:DatatypeProperty ;
+                           <http://purl.org/dc/elements/1.1/title> "Data Property hasEmail" .
+
+
+###  https://schema.org/telephone
+<https://schema.org/telephone> rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :CommunicationInfo ;
+                               <http://purl.org/dc/elements/1.1/title> "Data Property hasPhone" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/KDE#Activities
+:Activities rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty :isAcitivityTypeIn ;
+                              owl:someValuesFrom :CommunitiyBuilding
+                            ] ;
+            <http://purl.org/dc/elements/1.1/title> "Class Activities" ;
+            rdfs:comment "Different types of activities that are helad at the community centre" .
+
+
+###  http://www.semanticweb.org/KDE#Address
+:Address rdf:type owl:Class ;
+         rdfs:comment "Address" .
+
+
+###  http://www.semanticweb.org/KDE#Coffeshop
+:Coffeshop rdf:type owl:Class ;
+           <http://purl.org/dc/elements/1.1/title> "Class Coffeshop" .
+
+
+###  http://www.semanticweb.org/KDE#CommunicationInfo
+:CommunicationInfo rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasAddress ;
+                                     owl:someValuesFrom :Address
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasOnlinePresence ;
+                                     owl:someValuesFrom :OnlinePresence
+                                   ] ;
+                   <http://purl.org/dc/elements/1.1/title> "Class CommunicationInfo" ;
+                   rdfs:comment "Different way that can be used to contact." .
+
+
+###  http://www.semanticweb.org/KDE#CommunitiyBuilding
+:CommunitiyBuilding rdf:type owl:Class ;
+                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasContactInfo ;
+                                      owl:someValuesFrom :CommunicationInfo
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasCoordiantes ;
+                                      owl:someValuesFrom :GeoCordinates
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasFacilities ;
+                                      owl:someValuesFrom :Facilities
+                                    ] ;
+                    <http://purl.org/dc/elements/1.1/title> "Class CommunityBuilding" ;
+                    rdfs:comment "Community building used for different purposes" .
+
+
+###  http://www.semanticweb.org/KDE#Creator
+:Creator rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :isCreator ;
+                           owl:someValuesFrom :CommunitiyBuilding
+                         ] ;
+         <http://purl.org/dc/elements/1.1/title> "Class Creator" ;
+         rdfs:comment "The creator of the community center" .
+
+
+###  http://www.semanticweb.org/KDE#Facilities
+:Facilities rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty :isFacilitiesIn ;
+                              owl:someValuesFrom :CommunitiyBuilding
+                            ] ;
+            <http://purl.org/dc/elements/1.1/title> "Class Facilities" ;
+            rdfs:comment "Different facilities that are provided by the community centre" .
+
+
+###  http://www.semanticweb.org/KDE#GeoCordinates
+:GeoCordinates rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasX ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:decimal
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasY ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:decimal
+                               ] ;
+               <http://purl.org/dc/elements/1.1/title> "Class GeoCordiantes" ;
+               rdfs:comment "X and Y cordinate" .
+
+
+###  http://www.semanticweb.org/KDE#Location
+:Location rdf:type owl:Class ;
+          <http://purl.org/dc/elements/1.1/title> "Class Location" .
+
+
+###  http://www.semanticweb.org/KDE#MultiUseCommunityCentre
+:MultiUseCommunityCentre rdf:type owl:Class ;
+                         rdfs:subClassOf :CommunitiyBuilding ;
+                         <http://purl.org/dc/elements/1.1/title> "Class MultiUseCommunityCentre" ;
+                         rdfs:comment "Community centre having multiple purposes" .
+
+
+###  http://www.semanticweb.org/KDE#OnlinePresence
+:OnlinePresence rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasFacebookLink ;
+                                  owl:someValuesFrom xsd:string
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasTwitterLink ;
+                                  owl:someValuesFrom xsd:string
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasWebsite ;
+                                  owl:someValuesFrom xsd:string
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <https://schema.org/email> ;
+                                  owl:someValuesFrom xsd:string
+                                ] ;
+                <http://purl.org/dc/elements/1.1/title> "Class Online Presence" ;
+                rdfs:comment "Any onine purpose data such as facebook id , website" ;
+                rdfs:label "OnlinePresence" .
+
+
+###  http://www.semanticweb.org/KDE#ParkingSpace
+:ParkingSpace rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasCoordiantes ;
+                                owl:someValuesFrom :GeoCordinates
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasLocation ;
+                                owl:someValuesFrom :Location
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasNoOfSpaces ;
+                                owl:someValuesFrom xsd:int
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasSpaceType ;
+                                owl:someValuesFrom xsd:string
+                              ] ;
+              <http://purl.org/dc/elements/1.1/title> "Class ParkingSpace" ;
+              rdfs:comment "Parking space details such as location , no of spaces etc" .
+
+
+###  http://www.semanticweb.org/KDE#PlayArea
+:PlayArea rdf:type owl:Class ;
+          <http://purl.org/dc/elements/1.1/title> "Class PlayArea" ;
+          rdfs:comment "Details on play area facilities provided" .
+
+
+###  http://www.semanticweb.org/KDE#SinglePurposeCommunityCentre
+:SinglePurposeCommunityCentre rdf:type owl:Class ;
+                              rdfs:subClassOf :CommunitiyBuilding ;
+                              <http://purl.org/dc/elements/1.1/title> "SinglePurposeCommunityCentre" ;
+                              rdfs:comment "Community  centres used for single purpose" .
+
+
+###  http://www.semanticweb.org/KDE#SportAndRecreationClubs
+:SportAndRecreationClubs rdf:type owl:Class ;
+                         rdfs:subClassOf :SinglePurposeCommunityCentre ;
+                         <http://purl.org/dc/elements/1.1/title> "Class SportAndRecreationClubs" ;
+                         rdfs:comment "Type of single purpose center used for sports related acitivities" .
+
+
+###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/

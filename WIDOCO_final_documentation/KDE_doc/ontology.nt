@@ -1,0 +1,380 @@
+<http://www.semanticweb.org/KDE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/KDE> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.semanticweb.org/KDE/1.0> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2002/07/owl#rational
+<http://www.w3.org/2002/07/owl#rational> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/KDE#hasActivityType
+<http://www.semanticweb.org/KDE#hasActivityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/KDE#hasActivityType> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/KDE#isAcitivityTypeIn> .
+<http://www.semanticweb.org/KDE#hasActivityType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/KDE#CommunitiyBuilding> .
+<http://www.semanticweb.org/KDE#hasActivityType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/KDE#Activities> .
+# 
+# http://www.semanticweb.org/KDE#hasAddress
+<http://www.semanticweb.org/KDE#hasAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/KDE#hasAddress> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/KDE#hasAddress> <http://purl.org/dc/elements/1.1/title> "Property hasAddress" .
+# 
+# http://www.semanticweb.org/KDE#hasCoffeeDock
+<http://www.semanticweb.org/KDE#hasCoffeeDock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/KDE#hasCoffeeDock> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/KDE#Facilities> .
+<http://www.semanticweb.org/KDE#hasCoffeeDock> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/KDE#Coffeshop> .
+# 
+# http://www.semanticweb.org/KDE#hasContactInfo
+<http://www.semanticweb.org/KDE#hasContactInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/KDE#hasContactInfo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/KDE#hasContactInfo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/KDE#CommunitiyBuilding> .
+<http://www.semanticweb.org/KDE#hasContactInfo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/KDE#CommunicationInfo> .
+<http://www.semanticweb.org/KDE#hasContactInfo> <http://purl.org/dc/elements/1.1/title> "Property hasContactInfo" .
+# 
+# http://www.semanticweb.org/KDE#hasCoordiantes
+<http://www.semanticweb.org/KDE#hasCoordiantes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/KDE#hasCoordiantes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/KDE#hasCoordiantes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/KDE#hasCoordiantes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/KDE#GeoCordinates> .
+<http://www.semanticweb.org/KDE#hasCoordiantes> <http://purl.org/dc/elements/1.1/title> "Property hasCoordinates" .
+# 
+# http://www.semanticweb.org/KDE#hasCreator
+<http://www.semanticweb.org/KDE#hasCreator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/KDE#hasCreator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/KDE#hasCreator> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/KDE#isCreator> .
+<http://www.semanticweb.org/KDE#hasCreator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/KDE#CommunitiyBuilding> .
+<http://www.semanticweb.org/KDE#hasCreator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/KDE#Creator> .
+<http://www.semanticweb.org/KDE#hasCreator> <http://purl.org/dc/elements/1.1/title> "Property hasCreator" .
+# 
+# http://www.semanticweb.org/KDE#hasFacilities
+<http://www.semanticweb.org/KDE#hasFacilities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/KDE#hasFacilities> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/KDE#hasFacilities> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/KDE#isFacilitiesIn> .
+<http://www.semanticweb.org/KDE#hasFacilities> <http://purl.org/dc/elements/1.1/title> "Property hasFacilities" .
+# 
+# http://www.semanticweb.org/KDE#hasLocation
+<http://www.semanticweb.org/KDE#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/KDE#hasLocation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/KDE#hasLocation> <http://purl.org/dc/elements/1.1/title> "Property hasLocation" .
+# 
+# http://www.semanticweb.org/KDE#hasOnlinePresence
+<http://www.semanticweb.org/KDE#hasOnlinePresence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/KDE#hasOnlinePresence> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/KDE#hasOnlinePresence> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/KDE#CommunicationInfo> .
+<http://www.semanticweb.org/KDE#hasOnlinePresence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/KDE#OnlinePresence> .
+<http://www.semanticweb.org/KDE#hasOnlinePresence> <http://purl.org/dc/elements/1.1/title> "Property hasOnlinePresence" .
+# 
+# http://www.semanticweb.org/KDE#hasParkingFacility
+<http://www.semanticweb.org/KDE#hasParkingFacility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/KDE#hasParkingFacility> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/KDE#hasParkingFacility> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/KDE#CommunitiyBuilding> .
+<http://www.semanticweb.org/KDE#hasParkingFacility> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/KDE#ParkingSpace> .
+<http://www.semanticweb.org/KDE#hasParkingFacility> <http://purl.org/dc/elements/1.1/title> "Property hasParkingFacility" .
+# 
+# http://www.semanticweb.org/KDE#hasPlayArea
+<http://www.semanticweb.org/KDE#hasPlayArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/KDE#hasPlayArea> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/KDE#Facilities> .
+<http://www.semanticweb.org/KDE#hasPlayArea> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/KDE#PlayArea> .
+# 
+# http://www.semanticweb.org/KDE#isAcitivityTypeIn
+<http://www.semanticweb.org/KDE#isAcitivityTypeIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/KDE#isAcitivityTypeIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/KDE#isAcitivityTypeIn> <http://purl.org/dc/elements/1.1/title> "Property isActivityTypeIn" .
+# 
+# http://www.semanticweb.org/KDE#isCreator
+<http://www.semanticweb.org/KDE#isCreator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/KDE#isCreator> <http://purl.org/dc/elements/1.1/title> "Property isCreator" .
+# 
+# http://www.semanticweb.org/KDE#isFacilitiesIn
+<http://www.semanticweb.org/KDE#isFacilitiesIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/KDE#isFacilitiesIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/KDE#isFacilitiesIn> <http://purl.org/dc/elements/1.1/title> "Property isFacilitiesIn" .
+# 
+# http://www.semanticweb.org/KDE#isNearby
+<http://www.semanticweb.org/KDE#isNearby> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/KDE#isNearby> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/KDE#isNearby> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.semanticweb.org/KDE#isNearby> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/KDE#CommunitiyBuilding> .
+<http://www.semanticweb.org/KDE#isNearby> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/KDE#CommunitiyBuilding> .
+<http://www.semanticweb.org/KDE#isNearby> <http://purl.org/dc/elements/1.1/title> "Property isNearby" .
+# 
+# http://www.w3.org/2002/07/owl#topObjectProperty
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/KDE#Creator> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/KDE#hasDisabilityAccess
+<http://www.semanticweb.org/KDE#hasDisabilityAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/KDE#hasDisabilityAccess> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/KDE#CommunitiyBuilding> .
+<http://www.semanticweb.org/KDE#hasDisabilityAccess> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/KDE#hasFacebookLink
+<http://www.semanticweb.org/KDE#hasFacebookLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.semanticweb.org/KDE#hasId
+<http://www.semanticweb.org/KDE#hasId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/KDE#hasId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/KDE#ParkingSpace> .
+<http://www.semanticweb.org/KDE#hasId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://www.semanticweb.org/KDE#hasLocationName
+<http://www.semanticweb.org/KDE#hasLocationName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/KDE#hasLocationName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/KDE#ParkingSpace> .
+<http://www.semanticweb.org/KDE#hasLocationName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/KDE#hasName
+<http://www.semanticweb.org/KDE#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/KDE#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/KDE#CommunitiyBuilding> .
+<http://www.semanticweb.org/KDE#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/KDE#hasNoOfSpaces
+<http://www.semanticweb.org/KDE#hasNoOfSpaces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/KDE#hasNoOfSpaces> <http://purl.org/dc/elements/1.1/title> "Data Property hasNoOfSpaces" .
+# 
+# http://www.semanticweb.org/KDE#hasObjectId
+<http://www.semanticweb.org/KDE#hasObjectId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/KDE#hasObjectId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/KDE#CommunitiyBuilding> .
+<http://www.semanticweb.org/KDE#hasObjectId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://www.semanticweb.org/KDE#hasPrimaryActivity
+<http://www.semanticweb.org/KDE#hasPrimaryActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/KDE#hasPrimaryActivity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/KDE#Activities> .
+<http://www.semanticweb.org/KDE#hasPrimaryActivity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/KDE#hasSpaceType
+<http://www.semanticweb.org/KDE#hasSpaceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/KDE#hasSpaceType> <http://purl.org/dc/elements/1.1/title> "Data Property hasSpaceType" .
+# 
+# http://www.semanticweb.org/KDE#hasSummaryActivities
+<http://www.semanticweb.org/KDE#hasSummaryActivities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/KDE#hasSummaryActivities> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/KDE#Activities> .
+<http://www.semanticweb.org/KDE#hasSummaryActivities> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/KDE#hasTwitterLink
+<http://www.semanticweb.org/KDE#hasTwitterLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/KDE#hasTwitterLink> <http://purl.org/dc/elements/1.1/title> "Data Property hasTwitterLink" .
+# 
+# http://www.semanticweb.org/KDE#hasWebsite
+<http://www.semanticweb.org/KDE#hasWebsite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/KDE#hasWebsite> <http://purl.org/dc/elements/1.1/title> "Data Property hasWebsite" .
+# 
+# http://www.semanticweb.org/KDE#hasX
+<http://www.semanticweb.org/KDE#hasX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/KDE#hasX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/KDE#hasX> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/KDE#GeoCordinates> .
+# 
+# http://www.semanticweb.org/KDE#hasY
+<http://www.semanticweb.org/KDE#hasY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/KDE#hasY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/KDE#hasY> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/KDE#GeoCordinates> .
+# 
+# http://www.semanticweb.org/KDE#isSdccOwned
+<http://www.semanticweb.org/KDE#isSdccOwned> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/KDE#isSdccOwned> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/KDE#CommunitiyBuilding> .
+<http://www.semanticweb.org/KDE#isSdccOwned> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://schema.org/dateCreated
+<https://schema.org/dateCreated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/dateCreated> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/KDE#CommunitiyBuilding> .
+<https://schema.org/dateCreated> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# https://schema.org/email
+<https://schema.org/email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/email> <http://purl.org/dc/elements/1.1/title> "Data Property hasEmail" .
+# 
+# https://schema.org/telephone
+<https://schema.org/telephone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/KDE#CommunicationInfo> .
+<https://schema.org/telephone> <http://purl.org/dc/elements/1.1/title> "Data Property hasPhone" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/KDE#Activities
+<http://www.semanticweb.org/KDE#Activities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/KDE#Activities> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/KDE#isAcitivityTypeIn> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/KDE#CommunitiyBuilding> .
+<http://www.semanticweb.org/KDE#Activities> <http://purl.org/dc/elements/1.1/title> "Class Activities" .
+<http://www.semanticweb.org/KDE#Activities> <http://www.w3.org/2000/01/rdf-schema#comment> "Different types of activities that are helad at the community centre" .
+# 
+# http://www.semanticweb.org/KDE#Address
+<http://www.semanticweb.org/KDE#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/KDE#Address> <http://www.w3.org/2000/01/rdf-schema#comment> "Address" .
+# 
+# http://www.semanticweb.org/KDE#Coffeshop
+<http://www.semanticweb.org/KDE#Coffeshop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/KDE#Coffeshop> <http://purl.org/dc/elements/1.1/title> "Class Coffeshop" .
+# 
+# http://www.semanticweb.org/KDE#CommunicationInfo
+<http://www.semanticweb.org/KDE#CommunicationInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/KDE#CommunicationInfo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/KDE#hasAddress> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/KDE#Address> .
+<http://www.semanticweb.org/KDE#CommunicationInfo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/KDE#hasOnlinePresence> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/KDE#OnlinePresence> .
+<http://www.semanticweb.org/KDE#CommunicationInfo> <http://purl.org/dc/elements/1.1/title> "Class CommunicationInfo" .
+<http://www.semanticweb.org/KDE#CommunicationInfo> <http://www.w3.org/2000/01/rdf-schema#comment> "Different way that can be used to contact." .
+# 
+# http://www.semanticweb.org/KDE#CommunitiyBuilding
+<http://www.semanticweb.org/KDE#CommunitiyBuilding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/KDE#CommunitiyBuilding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/KDE#hasContactInfo> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/KDE#CommunicationInfo> .
+<http://www.semanticweb.org/KDE#CommunitiyBuilding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/KDE#hasCoordiantes> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/KDE#GeoCordinates> .
+<http://www.semanticweb.org/KDE#CommunitiyBuilding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/KDE#hasFacilities> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/KDE#Facilities> .
+<http://www.semanticweb.org/KDE#CommunitiyBuilding> <http://purl.org/dc/elements/1.1/title> "Class CommunityBuilding" .
+<http://www.semanticweb.org/KDE#CommunitiyBuilding> <http://www.w3.org/2000/01/rdf-schema#comment> "Community building used for different purposes" .
+# 
+# http://www.semanticweb.org/KDE#Creator
+<http://www.semanticweb.org/KDE#Creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/KDE#Creator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/KDE#isCreator> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/KDE#CommunitiyBuilding> .
+<http://www.semanticweb.org/KDE#Creator> <http://purl.org/dc/elements/1.1/title> "Class Creator" .
+<http://www.semanticweb.org/KDE#Creator> <http://www.w3.org/2000/01/rdf-schema#comment> "The creator of the community center" .
+# 
+# http://www.semanticweb.org/KDE#Facilities
+<http://www.semanticweb.org/KDE#Facilities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/KDE#Facilities> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/KDE#isFacilitiesIn> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/KDE#CommunitiyBuilding> .
+<http://www.semanticweb.org/KDE#Facilities> <http://purl.org/dc/elements/1.1/title> "Class Facilities" .
+<http://www.semanticweb.org/KDE#Facilities> <http://www.w3.org/2000/01/rdf-schema#comment> "Different facilities that are provided by the community centre" .
+# 
+# http://www.semanticweb.org/KDE#GeoCordinates
+<http://www.semanticweb.org/KDE#GeoCordinates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/KDE#GeoCordinates> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/KDE#hasX> .
+_:genid9 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/KDE#GeoCordinates> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/KDE#hasY> .
+_:genid10 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/KDE#GeoCordinates> <http://purl.org/dc/elements/1.1/title> "Class GeoCordiantes" .
+<http://www.semanticweb.org/KDE#GeoCordinates> <http://www.w3.org/2000/01/rdf-schema#comment> "X and Y cordinate" .
+# 
+# http://www.semanticweb.org/KDE#Location
+<http://www.semanticweb.org/KDE#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/KDE#Location> <http://purl.org/dc/elements/1.1/title> "Class Location" .
+# 
+# http://www.semanticweb.org/KDE#MultiUseCommunityCentre
+<http://www.semanticweb.org/KDE#MultiUseCommunityCentre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/KDE#MultiUseCommunityCentre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/KDE#CommunitiyBuilding> .
+<http://www.semanticweb.org/KDE#MultiUseCommunityCentre> <http://purl.org/dc/elements/1.1/title> "Class MultiUseCommunityCentre" .
+<http://www.semanticweb.org/KDE#MultiUseCommunityCentre> <http://www.w3.org/2000/01/rdf-schema#comment> "Community centre having multiple purposes" .
+# 
+# http://www.semanticweb.org/KDE#OnlinePresence
+<http://www.semanticweb.org/KDE#OnlinePresence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/KDE#OnlinePresence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/KDE#hasFacebookLink> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/KDE#OnlinePresence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/KDE#hasTwitterLink> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/KDE#OnlinePresence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/KDE#hasWebsite> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/KDE#OnlinePresence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://schema.org/email> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/KDE#OnlinePresence> <http://purl.org/dc/elements/1.1/title> "Class Online Presence" .
+<http://www.semanticweb.org/KDE#OnlinePresence> <http://www.w3.org/2000/01/rdf-schema#comment> "Any onine purpose data such as facebook id , website" .
+<http://www.semanticweb.org/KDE#OnlinePresence> <http://www.w3.org/2000/01/rdf-schema#label> "OnlinePresence" .
+# 
+# http://www.semanticweb.org/KDE#ParkingSpace
+<http://www.semanticweb.org/KDE#ParkingSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/KDE#ParkingSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/KDE#hasCoordiantes> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/KDE#GeoCordinates> .
+<http://www.semanticweb.org/KDE#ParkingSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/KDE#hasLocation> .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/KDE#Location> .
+<http://www.semanticweb.org/KDE#ParkingSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/KDE#hasNoOfSpaces> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/KDE#ParkingSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/KDE#hasSpaceType> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/KDE#ParkingSpace> <http://purl.org/dc/elements/1.1/title> "Class ParkingSpace" .
+<http://www.semanticweb.org/KDE#ParkingSpace> <http://www.w3.org/2000/01/rdf-schema#comment> "Parking space details such as location , no of spaces etc" .
+# 
+# http://www.semanticweb.org/KDE#PlayArea
+<http://www.semanticweb.org/KDE#PlayArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/KDE#PlayArea> <http://purl.org/dc/elements/1.1/title> "Class PlayArea" .
+<http://www.semanticweb.org/KDE#PlayArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Details on play area facilities provided" .
+# 
+# http://www.semanticweb.org/KDE#SinglePurposeCommunityCentre
+<http://www.semanticweb.org/KDE#SinglePurposeCommunityCentre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/KDE#SinglePurposeCommunityCentre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/KDE#CommunitiyBuilding> .
+<http://www.semanticweb.org/KDE#SinglePurposeCommunityCentre> <http://purl.org/dc/elements/1.1/title> "SinglePurposeCommunityCentre" .
+<http://www.semanticweb.org/KDE#SinglePurposeCommunityCentre> <http://www.w3.org/2000/01/rdf-schema#comment> "Community  centres used for single purpose" .
+# 
+# http://www.semanticweb.org/KDE#SportAndRecreationClubs
+<http://www.semanticweb.org/KDE#SportAndRecreationClubs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/KDE#SportAndRecreationClubs> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/KDE#SinglePurposeCommunityCentre> .
+<http://www.semanticweb.org/KDE#SportAndRecreationClubs> <http://purl.org/dc/elements/1.1/title> "Class SportAndRecreationClubs" .
+<http://www.semanticweb.org/KDE#SportAndRecreationClubs> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of single purpose center used for sports related acitivities" .
+# 
+# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
